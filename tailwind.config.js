@@ -2,13 +2,8 @@
 module.exports = {
   content: [
     "./node_modules/flowbite-react/**/*.js",
-    "./components/**/*.{js,jsx,ts,tsx}",
-    "./pages/**/*.{js,jsx,ts,tsx}",
-    // not currently using below
-    // "./app/**/*.{js.jsx,ts.tsx}",
-    // "./public/**/*.html",
-    // "./layouts/**/*/.html",
-    // "./content/**/*.{md,html}",
+    "./src/**/*.{js,jsx,ts,tsx,html}",
+    "./public/**/*.html",
   ],
   plugins: [
     require("flowbite/plugin")

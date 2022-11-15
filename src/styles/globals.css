@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Brown Sugar';
+  src: url('../../public/fonts/BrownSugar.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../public/fonts/Raleway-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: 'Raleway';
+  background-color: #173738;
+  background-image: url('../../public/images/bgPattern_05.png');
+  background-repeat: repeat;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.gold {
+  color: #835f02;
+}
+
+.teal {
+  color: #173738;
+}
+
+.brown-sugar {
+  font-family: 'Brown Sugar';
+  color: #835f02;
+}
+
+.raleway {
+  font-family: 'Raleway';
+}
