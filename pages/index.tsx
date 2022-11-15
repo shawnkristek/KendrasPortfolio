@@ -1,3 +1,5 @@
+import { Alert } from 'flowbite-react';
+
 export default function Home() {
   return (
     <div className="flex flex-row">
@@ -13,6 +15,7 @@ export default function Home() {
           Some of the things I love are nature, fantasy books, my cats, cool tattoos, baking, iced coffee, and martial arts.
         </p>
       </div>
+      <Alert color="info">Alert!</Alert>
     </div>
   );
 }
