@@ -16,6 +16,14 @@
   font-style: normal;
 }
 
+html,
+body {
+  font-family: 'Raleway';
+  background-color: #173738;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
 .brown-sugar {
   font-family: 'Brown Sugar';
   color: #835f02;
@@ -23,10 +31,4 @@
 
 .raleway {
   font-family: 'Raleway';
-}
-
-body {
-  font-family: 'Raleway';
-  background-color: #173738;
-  color: gray;
 }
