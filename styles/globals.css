@@ -18,6 +18,7 @@
 
 .brown-sugar {
   font-family: 'Brown Sugar';
+  color: #835f02;
 }
 
 .raleway {
@@ -26,4 +27,6 @@
 
 body {
   font-family: 'Raleway';
+  background-color: #173738;
+  color: #fff;
 }
