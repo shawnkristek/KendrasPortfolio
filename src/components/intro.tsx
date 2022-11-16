@@ -1,13 +1,15 @@
 import { Router, useRouter } from 'next/router';
 import { AppConfig } from '../utils/AppConfig';
 
+import Image from 'next/image';
+
 export default function Intro() {
     const router = useRouter();
     return (
         <div className="flex flex-row justify-center mt-10 h-auto">
             <div className="w-5/12 justify-center">
                 <div className="px-10 flex justify-center">
-                    <img src='images/kendra.jpg' alt="Kendra Wright" width="80%" height="auto" className="rounded-3xl"/>
+                    <Image src='/images/kendra.jpg' alt="Kendra Wright" width={560} height={720} className="rounded-3xl"/>
                 </div>
             </div>
             <div className="flex flex-col text-center w-5/12">
