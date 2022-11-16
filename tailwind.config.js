@@ -22,7 +22,7 @@ module.exports = {
     'leading-9',
     'shadow-lg',
   ],
-  darkmode: 'class',
+  // darkmode: 'class',
   theme: {
     extend: {},
     fontFamily: {

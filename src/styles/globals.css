@@ -42,3 +42,43 @@ body {
 .raleway {
   font-family: 'Raleway';
 }
+
+div.navbar ul li {
+  position: relative;
+  margin: 0 1.25rem;
+  padding: 0.5rem 0;
+}
+
+div.navbar ul li.selected {
+  color: #835f02;
+  font-weight: 600;
+}
+
+div.navbar ul li:after,
+div.navbar ul li.selected:after {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  color: transparent;
+  height: 3px;
+  content: '';
+  background-image: linear-gradient(90deg, #173738, #835f02, #173738);
+}
+
+div.navbar ul li:hover {
+  color: #835f02;
+  font-weight: 600;
+}
+
+div.navbar ul li:hover:after {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+div.navbar ul li.selected:after {
+  width: 100%;
+}
+
