@@ -6,11 +6,11 @@ export default function Intro() {
     return (
         <div className="flex flex-row justify-center mt-10 h-auto">
             <div className="w-5/12 justify-center">
-                <div className="px-10 flex">
+                <div className="px-10 flex justify-center">
                     <img src='images/kendra.jpg' alt="Kendra Wright" width="80%" height="auto" className="rounded-3xl"/>
                 </div>
             </div>
-            <div className="flex flex-col g text-center w-5/12">
+            <div className="flex flex-col text-center w-5/12">
                 <h1 className="brown-sugar text-9xl">
                     {AppConfig.fullName}
                 </h1>
