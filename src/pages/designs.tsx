@@ -11,7 +11,12 @@ export default function Designs(){
                 />
             }
         >
-            <h1 className="gold brown-sugar">Designs</h1>
+            <div className="grid grid-flow-row gap-[10rem]">
+                <h1 id="" className="gold brown-sugar mt-20">Designs</h1>
+                <h1 id="hotel-booking" className="gold brown-sugar mt-20">Hotel Booking</h1>
+                <h1 id="book-box" className="gold brown-sugar mt-20">Book Box</h1>
+                <h1 id="mobile-email" className="gold brown-sugar mt-20">Mobile Email</h1>
+            </div>
         </Main>
     );
 }
