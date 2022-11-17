@@ -22,26 +22,22 @@ module.exports = {
     'leading-9',
     'shadow-lg',
   ],
-  // darkmode: 'class',
   theme: {
     extend: {},
     fontFamily: {
       sans: ['Raleway', 'sans-serif'],
       serif: ['Brown Sugar', 'serif'],
     },
-    // extend: {
-    //   '128': '32rem',
-    //   '144': '36rem',
-    // },
-    // borderRadius: {
-    //   '4xl': '2rem',
-    // }
+    fontSize: {
+      xs: ['0.75rem', '1rem'],
+      sm: ['0.875rem', '1.25rem'],
+      base: ['1rem', '1.5rem'],
+      lg: ['1.5rem', '1.5rem'],
+      xl: ['1.75rem', '2rem'],
+      '2xl': ['2rem', '2.75rem'],
+      '3xl': ['3.5rem', '3.875rem'],
+      '4xl': ['8rem', '3rem'],
+      '12xl': ['12rem', 1],
+    }
   },
-  // variants: {
-  //   fill: [],
-  //   extend: {
-  //     borderColor: ['focus-visible'],
-  //     opacity: ['disabled'],
-  //   }
-  // }
 }

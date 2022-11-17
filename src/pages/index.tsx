@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router';
-
 import {AppConfig} from '../utils/AppConfig';
 
 import Meta from '../layouts/meta';
