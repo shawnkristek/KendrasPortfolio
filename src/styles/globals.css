@@ -22,8 +22,21 @@ body {
   background-color: #173738;
   background-image: url('../../public/images/bgPattern_05.png');
   background-repeat: repeat;
+  background-position: 0 -200px;
   color: #fff;
-  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 5em;
+  line-height: .5;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  object-fit: none;
+  object-position: 42% 3%;
 }
 
 .gold {
@@ -36,26 +49,27 @@ body {
 
 .brown-sugar {
   font-family: 'Brown Sugar';
-  color: #835f02;
 }
 
 .raleway {
   font-family: 'Raleway';
 }
 
-div.navbar ul li {
+.navbar ul li,
+.navbar ul div {
   position: relative;
   margin: 0 1.25rem;
   padding: 0.5rem 0;
+  font-size: 0.75em;
 }
 
-div.navbar ul li.selected {
+.navbar ul li.active {
   color: #835f02;
   font-weight: 600;
 }
 
-div.navbar ul li:after,
-div.navbar ul li.selected:after {
+.navbar ul li:after,
+.navbar ul li.active:after {
   position: absolute;
   margin: auto;
   bottom: 0;
@@ -68,17 +82,17 @@ div.navbar ul li.selected:after {
   background-image: linear-gradient(90deg, #173738, #835f02, #173738);
 }
 
-div.navbar ul li:hover {
+.navbar ul li:hover {
   color: #835f02;
   font-weight: 600;
 }
 
-div.navbar ul li:hover:after {
+.navbar ul li:hover:after {
   width: 100%;
   transition: all 0.5s;
 }
 
-div.navbar ul li.selected:after {
+.navbar ul li.selected:after {
   width: 100%;
 }
 
