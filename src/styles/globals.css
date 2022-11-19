@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* reset */
 @font-face {
   font-family: 'Brown Sugar';
   src: url('../../public/fonts/BrownSugar.woff2');

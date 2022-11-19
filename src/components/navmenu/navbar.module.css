@@ -1,0 +1,38 @@
+
+.navlink {
+    position: relative;
+    margin: 0 1.25rem;
+    padding: 0.5rem 0;
+}
+
+.navlink:after {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    color: transparent;
+    height: 3px;
+    content: '';
+    background-image: linear-gradient(90deg, #173738, #835f02, #173738);
+}
+
+.navlink:hover {
+    color: #835f02;
+    font-weight: 600;
+}
+
+.navlink:hover:after {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.active {
+    color: #835f02;
+    font-weight: 600;
+}
+
+.active:after {
+    width: 100%;
+}
