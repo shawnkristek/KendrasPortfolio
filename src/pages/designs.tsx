@@ -11,7 +11,7 @@ export default function Designs(){
                 />
             }
         >
-            <div className="grid grid-flow-row gap-[10rem]">
+            <div className="grid grid-flow-row gap-[10rem] text-center">
                 <h1 id="" className="gold brown-sugar mt-20">Designs</h1>
                 <h1 id="hotel-booking" className="gold brown-sugar mt-20">Hotel Booking</h1>
                 <h1 id="book-box" className="gold brown-sugar mt-20">Book Box</h1>

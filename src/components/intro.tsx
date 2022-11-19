@@ -1,10 +1,7 @@
-// import { Router, useRouter } from 'next/router';
 import { AppConfig } from '../utils/AppConfig';
-
-// import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Intro() {
-    // const router = useRouter();
     return (
         <div className="w-full flex flex-col gap-10 xl:flex xl:flex-row">
             <div className="w-full flex justify-center">
@@ -20,7 +17,9 @@ export default function Intro() {
                     <br />
                     <br />
                         Some of the things I love are nature <span role="img" aria-label="tree">🌳</span>, fantasy books <span role="img" aria-label="elf">🧝‍♀️</span>, my cats <span role="img" aria-label="cats">🐈</span>, cool tattoos <span role="img" aria-label="skull">💀</span>, baking <span role="img" aria-label="cupcake">🧁</span>, iced coffee <span role="img" aria-label="coffee">☕</span>, and martial arts <span role="img" aria-label="karate">🥋</span>.
-                        
+                    <br />
+                    <br />
+                        Check out my work <Link href="/case-studies" className="gold font-semibold hover:text-gray-300 hover:underline hover:transition hover:duration-500">here.</Link>
                     </p>
             </div>
         </div>
