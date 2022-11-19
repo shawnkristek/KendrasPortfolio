@@ -41,7 +41,7 @@ export default function NavBar() {
                     <Link href="/resume"><li className={(router.pathname == "/resume" ? "active" : "") + " nav-link"}>RESUME</li></Link>
                     <div className="dropdown" onMouseLeave={handleContactLeave}>
                         <button type="button" className="drop-btn">
-                            <Link href="/contact"><li className={(router.pathname == "/contact" ? "active" : "") + " nav-link"}>CONTACT</li></Link>
+                            <Link href=""><li className={(router.pathname == "/contact" ? "active" : "") + " nav-link"}>CONTACT</li></Link>
                         </button>
                         <div className="bg-[#173738] rounded drop-content">
                             <ul className="">
