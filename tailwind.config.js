@@ -6,7 +6,7 @@ module.exports = {
     "./public/**/*.html",
   ],
   plugins: [
-    require("flowbite/plugin")
+    require('@headlessui/tailwindcss')
   ],
   safelist: [
     'w-64',
