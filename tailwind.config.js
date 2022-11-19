@@ -6,7 +6,6 @@ module.exports = {
     "./public/**/*.html",
   ],
   plugins: [
-    require('@headlessui/tailwindcss')
   ],
   safelist: [
     'w-64',
