@@ -55,21 +55,21 @@ h1 {
   font-family: 'Raleway';
 }
 
-.navbar ul li,
-.navbar ul div {
+.nav-link,
+.drop-link {
   position: relative;
   margin: 0 1.25rem;
   padding: 0.5rem 0;
   font-size: 0.75em;
 }
 
-.navbar ul li.active {
+.nav-link.active {
   color: #835f02;
   font-weight: 600;
 }
 
-.navbar ul li:after,
-.navbar ul li.active:after {
+.nav-link:after,
+.drop-link:after {
   position: absolute;
   margin: auto;
   bottom: 0;
@@ -82,17 +82,37 @@ h1 {
   background-image: linear-gradient(90deg, #173738, #835f02, #173738);
 }
 
-.navbar ul li:hover {
+.nav-link:hover,
+.drop-link:hover {
   color: #835f02;
   font-weight: 600;
 }
 
-.navbar ul li:hover:after {
+.nav-link:hover:after,
+.drop-link:hover:after {
   width: 100%;
   transition: all 0.5s;
 }
 
-.navbar ul li.selected:after {
+.nav-link.active:after {
   width: 100%;
 }
 
+.dropdown {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.dropdown:hover .drop-content {
+  display: block;
+}
