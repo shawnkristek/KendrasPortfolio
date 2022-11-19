@@ -33,7 +33,7 @@ export default function DropDown({children, urls}: Props) {
       <div className="bg-[#173738] rounded drop-content">
         <ul className="" >
           { urls.map((item) => (
-            <Link href={item.href}>
+            <Link href={item.href} key={item.text}>
               <li className="drop-link">
                 {item.text}
               </li>
