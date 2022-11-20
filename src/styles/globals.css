@@ -24,7 +24,7 @@ body {
   background-image: url('../../public/images/bgPattern_05.png');
   background-repeat: repeat;
   background-position: 0 -200px;
-  color: #fff;
+  color: #c5cdcd;
 }
 
 h1 {
@@ -38,6 +38,10 @@ h1 {
   height: 12rem;
   object-fit: none;
   object-position: 42% 3%;
+}
+
+.white {
+  color: #c5cdcd;
 }
 
 .gold {

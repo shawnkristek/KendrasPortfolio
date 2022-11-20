@@ -19,8 +19,11 @@ export default function Intro() {
                         Some of the things I love are nature <span role="img" aria-label="tree">🌳</span>, fantasy books <span role="img" aria-label="elf">🧝‍♀️</span>, my cats <span role="img" aria-label="cats">🐈</span>, cool tattoos <span role="img" aria-label="skull">💀</span>, baking <span role="img" aria-label="cupcake">🧁</span>, iced coffee <span role="img" aria-label="coffee">☕</span>, and martial arts <span role="img" aria-label="karate">🥋</span>.
                     <br />
                     <br />
-                        Check out my work <Link href="/case-studies" className="gold font-semibold hover:text-gray-300 hover:underline hover:transition hover:duration-500">here.</Link>
+                        {/* Check out my work <Link href="/case-studies" className="gold font-semibold hover:text-gray-300 hover:underline hover:transition hover:duration-500">here.</Link> */}
                     </p>
+                    <Link href="/case-studies">
+                        <button type="button" className="bg-[#835f02] focus:ring-1 focus:outline-none ring-[#c5cdcd] shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 hover:ring-2 transition duration-200 font-semibold">Check out my work</button>
+                    </Link>
             </div>
         </div>
     );
