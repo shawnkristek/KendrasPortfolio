@@ -96,7 +96,7 @@ export default function NavMenu() {
                                             <div className={!copied ? "" : "invisible h-0"}>kendrauxd@gmail.com</div>
                                         </li>
                                     </button>
-                                    <a target="_blank" href="https://www.linkedin.com/in/kendrauxd">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kendrauxd">
                                         <li className={styles.navlink}>LinkedIn</li>
                                     </a>
                                 </ul>
