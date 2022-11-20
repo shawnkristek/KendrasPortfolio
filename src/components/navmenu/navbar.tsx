@@ -45,7 +45,7 @@ export default function NavMenu() {
                         <Menu.Item className={styles.navlink + isActivePage("/")}>HOME</Menu.Item>
                     </Menu.Link>
                     <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay} onOpenChange={handleOpenCaseStudies} open={openCaseStudies}>
-                        <OneTwoHoverButton href="/case-studies" open={!openCaseStudies}>
+                        <OneTwoHoverButton href="/case-studies" open={openCaseStudies}>
                             <Menu.Item className={styles.navlink + isActivePage("/case-studies")}>CASE STUDIES</Menu.Item>
                         </OneTwoHoverButton>
                             <HoverCard.Content>
@@ -64,7 +64,7 @@ export default function NavMenu() {
                     </HoverCard.Root>
 
                     <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay} open={openDesigns} onOpenChange={handleOpenDesigns}>
-                        <OneTwoHoverButton href="/designs" open={!openDesigns}>
+                        <OneTwoHoverButton href="/designs" open={openDesigns}>
                                 <Menu.Item className={styles.navlink + isActivePage("/designs")}>UI/VISUAL DESIGNS</Menu.Item>
                         </OneTwoHoverButton>
                             <HoverCard.Content>
