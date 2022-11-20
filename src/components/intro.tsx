@@ -22,7 +22,7 @@ export default function Intro() {
                         {/* Check out my work <Link href="/case-studies" className="gold font-semibold hover:text-gray-300 hover:underline hover:transition hover:duration-500">here.</Link> */}
                     </p>
                     <Link href="/case-studies">
-                        <button type="button" className="text-white bg-[#835f02] focus:ring-1 focus:outline-none ring-white shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 hover:ring-2 transition duration-200 font-medium">Check out my work</button>
+                        <button type="button" className="bg-[#835f02] focus:ring-1 focus:outline-none ring-[#c5cdcd] shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 hover:ring-2 transition duration-200 font-semibold">Check out my work</button>
                     </Link>
             </div>
         </div>
