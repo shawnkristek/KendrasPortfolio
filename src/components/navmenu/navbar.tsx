@@ -6,10 +6,11 @@ import { useRouter } from "next/router";
 import * as Menu from "@radix-ui/react-navigation-menu";
 import * as HoverCard from "@radix-ui/react-hover-card";
 
+import { CopyIcon } from '@radix-ui/react-icons';
+
 import OneTwoHoverButton from "./oneTwoHoverButton";
 
 import styles from "./navbar.module.css";
-import { OperationCanceledException } from "typescript";
 
 export default function NavMenu() {
     const router = useRouter();
@@ -38,14 +39,14 @@ export default function NavMenu() {
     const hoverDelay = 0;
 
     return (
-        <div className="md:flex justify-center py-5 w-full hidden text-[0.65em]">
+        <div className="lg:flex justify-center py-5 w-full hidden text-[0.65em]">
             <Menu.Root className="w-full flex flex-wrap items-center justify-center mx-auto">
                 <Menu.List className="flex-row text-center flex">
                     <Menu.Link href="/">
                         <Menu.Item className={styles.navlink + isActivePage("/")}>HOME</Menu.Item>
                     </Menu.Link>
                     <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay} onOpenChange={handleOpenCaseStudies} open={openCaseStudies}>
-                        <OneTwoHoverButton href="/case-studies" open={!openCaseStudies}>
+                        <OneTwoHoverButton href="/case-studies" open={openCaseStudies}>
                             <Menu.Item className={styles.navlink + isActivePage("/case-studies")}>CASE STUDIES</Menu.Item>
                         </OneTwoHoverButton>
                             <HoverCard.Content>
@@ -64,7 +65,7 @@ export default function NavMenu() {
                     </HoverCard.Root>
 
                     <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay} open={openDesigns} onOpenChange={handleOpenDesigns}>
-                        <OneTwoHoverButton href="/designs" open={!openDesigns}>
+                        <OneTwoHoverButton href="/designs" open={openDesigns}>
                                 <Menu.Item className={styles.navlink + isActivePage("/designs")}>UI/VISUAL DESIGNS</Menu.Item>
                         </OneTwoHoverButton>
                             <HoverCard.Content>
@@ -92,8 +93,8 @@ export default function NavMenu() {
                                 <ul className="bg-[#173738] rounded text-center">
                                     <button onClick={handleEmailClick}>
                                         <li className={styles.navlink}>
-                                            <div className={(copied ? " " : "hidden ") + "white text-center"}>Copied!</div>
-                                            <div className={!copied ? "" : "invisible h-0"}>kendrauxd@gmail.com</div>
+                                            <div className={(copied ? " " : "hidden ") + "kwhite text-center"}>Copied!</div>
+                                            <div className={"flex flex-row items-center " + (!copied ? "" : "invisible h-0")}>Copy my email &nbsp;<CopyIcon /></div>
                                         </li>
                                     </button>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kendrauxd">
