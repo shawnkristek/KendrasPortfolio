@@ -39,7 +39,7 @@ export default function NavMenu() {
     const hoverDelay = 0;
 
     return (
-        <div className="md:flex justify-center py-5 w-full hidden text-[0.65em]">
+        <div className="lg:flex justify-center py-5 w-full hidden text-[0.65em]">
             <Menu.Root className="w-full flex flex-wrap items-center justify-center mx-auto">
                 <Menu.List className="flex-row text-center flex">
                     <Menu.Link href="/">

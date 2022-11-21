@@ -5,8 +5,8 @@ export default function Intro() {
     return (
         <div className="w-full flex flex-col gap-10 xl:flex xl:flex-row">
             <div className="w-full flex justify-center">
-                <img src='/images/kendra.jpg' alt="Kendra Wright" className="max-w-xs md:max-w-lg h-auto rounded-2xl hidden md:flex p-1 ring-2 ring-[#835f02] object-cover"/>
-                <img src="/images/kendra.jpg" alt="Kendra Wright" className="avatar p-1 ring-4 ring-[#835f02] md:hidden" />
+                <img src='/images/kendra.jpg' alt="Kendra Wright" className="max-w-xs lg:max-w-lg h-auto rounded-2xl hidden lg:flex p-1 ring-2 ring-[#835f02] object-cover"/>
+                <img src="/images/kendra.jpg" alt="Kendra Wright" className="avatar p-1 ring-4 ring-[#835f02] lg:hidden" />
             </div>
             <div className="text-center mx-auto my-auto max-w-2xl">
                 <h1 className="brown-sugar gold mb-10">

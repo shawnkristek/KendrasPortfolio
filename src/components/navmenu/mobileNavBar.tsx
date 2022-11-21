@@ -25,7 +25,7 @@ export default function MobileNavBar() {
         return page == router.asPath ? styles.active : "";
     }
     return (
-        <div className="md:hidden">
+        <div className="lg:hidden">
             <Dialog.Root>
                 {/* TODO Add animations / transitions for a better sidebar entry and exit. */}
                 <Dialog.Trigger className={styles.burgerButton}>
