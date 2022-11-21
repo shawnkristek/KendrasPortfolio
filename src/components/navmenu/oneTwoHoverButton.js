@@ -3,13 +3,7 @@ import {useRouter} from 'next/router';
 
 import * as HoverCard from "@radix-ui/react-hover-card";
 
-type Props = {
-    children: ReactNode,
-    href: string,
-    open: boolean,
-}
-
-const OneTwoHoverButton = ({children, href, open}: Props) => {
+const OneTwoHoverButton = ({children, href, open}) => {
     const router = useRouter();
     const [clicked, setClicked] = useState(false);
 

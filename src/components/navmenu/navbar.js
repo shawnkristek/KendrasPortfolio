@@ -20,7 +20,7 @@ export default function NavMenu() {
         let timer = setTimeout(() => setCopied(false), 500);
     };
 
-    const isActivePage = (page: string) => {
+    const isActivePage = (page) => {
         return page == router.pathname ? ` ${styles.active}` : "";
     };
 

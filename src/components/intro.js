@@ -6,6 +6,7 @@ export default function Intro() {
         <div className="w-full flex flex-col gap-10 xl:flex xl:flex-row">
             <div className="w-full flex justify-center">
                 <img src='/images/kendra.jpg' alt="Kendra Wright" className="max-w-xs lg:max-w-lg h-auto rounded-2xl hidden lg:flex p-1 ring-2 ring-[#835f02] object-cover"/>
+                {/* TODO convert this to use Radix UI <Avatar /> */}
                 <img src="/images/kendra.jpg" alt="Kendra Wright" className="avatar p-1 ring-4 ring-[#835f02] lg:hidden" />
             </div>
             <div className="text-center mx-auto my-auto max-w-2xl">

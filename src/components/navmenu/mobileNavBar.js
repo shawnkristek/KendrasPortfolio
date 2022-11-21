@@ -20,7 +20,7 @@ export default function MobileNavBar() {
         let timer = setTimeout(() => setCopied(false), 500);
     };
 
-    const isActivePage = (page: string) => {
+    const isActivePage = (page) => {
         console.log(page == router.asPath);
         return page == router.asPath ? styles.active : "";
     }
