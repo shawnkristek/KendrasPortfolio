@@ -6,10 +6,11 @@ import { useRouter } from "next/router";
 import * as Menu from "@radix-ui/react-navigation-menu";
 import * as HoverCard from "@radix-ui/react-hover-card";
 
+import { CopyIcon } from '@radix-ui/react-icons';
+
 import OneTwoHoverButton from "./oneTwoHoverButton";
 
 import styles from "./navbar.module.css";
-import { OperationCanceledException } from "typescript";
 
 export default function NavMenu() {
     const router = useRouter();
@@ -92,8 +93,8 @@ export default function NavMenu() {
                                 <ul className="bg-[#173738] rounded text-center">
                                     <button onClick={handleEmailClick}>
                                         <li className={styles.navlink}>
-                                            <div className={(copied ? " " : "hidden ") + "white text-center"}>Copied!</div>
-                                            <div className={!copied ? "" : "invisible h-0"}>kendrauxd@gmail.com</div>
+                                            <div className={(copied ? " " : "hidden ") + "kwhite text-center"}>Copied!</div>
+                                            <div className={"flex flex-row items-center " + (!copied ? "" : "invisible h-0")}>Copy my email &nbsp;<CopyIcon /></div>
                                         </li>
                                     </button>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kendrauxd">

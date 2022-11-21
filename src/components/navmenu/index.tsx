@@ -1,9 +1,12 @@
 import NavBar from './navbar';
-// import MobileNavBar from './mobile-nav';
+import MobileNavBar from './mobileNavBar';
 
 const NavMenu = () => {
     return (
-        <NavBar />
+        <>
+            <NavBar />
+            <MobileNavBar />
+        </>
     );
 }
 

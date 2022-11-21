@@ -14,7 +14,6 @@ const OneTwoHoverButton = ({children, href, open}: Props) => {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
-        console.log(clicked,open);
         if (clicked || open) {
             router.push(href);
         }
