@@ -8,23 +8,11 @@ import * as HoverCard from "@radix-ui/react-hover-card";
 
 import { CopyIcon } from '@radix-ui/react-icons';
 
-import OneTwoHoverButton from "./oneTwoHoverButton";
-
 import styles from "./navbar.module.css";
 
 export default function NavMenu() {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
-    const [openCaseStudies, setOpenCaseStudies] = useState(false);
-    const [openDesigns, setOpenDesigns] = useState(false);
-
-    const handleOpenCaseStudies = () => {
-        setOpenCaseStudies(!openCaseStudies);
-    }
-
-    const handleOpenDesigns = () => {
-        setOpenDesigns(!openDesigns);
-    }
 
     const handleEmailClick = () => {
         navigator.clipboard.writeText("kendrauxd@gmail.com");
@@ -45,10 +33,12 @@ export default function NavMenu() {
                     <Menu.Link href="/">
                         <Menu.Item className={styles.navlink + isActivePage("/")}>HOME</Menu.Item>
                     </Menu.Link>
-                    <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay} onOpenChange={handleOpenCaseStudies} open={openCaseStudies}>
-                        <OneTwoHoverButton href="/case-studies" open={openCaseStudies}>
-                            <Menu.Item className={styles.navlink + isActivePage("/case-studies")}>CASE STUDIES</Menu.Item>
-                        </OneTwoHoverButton>
+                    <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay} >
+                        <HoverCard.Trigger asChild>
+                            <Menu.Link href="/case-studies">
+                                <Menu.Item className={styles.navlink + isActivePage("/case-studies")}>CASE STUDIES</Menu.Item>
+                            </Menu.Link>
+                        </HoverCard.Trigger>
                             <HoverCard.Content>
                                 <ul className="bg-[#173738] rounded text-center">
                                     <Link href="/case-studies#kindle-book-clubs">
@@ -64,10 +54,12 @@ export default function NavMenu() {
                             </HoverCard.Content>
                     </HoverCard.Root>
 
-                    <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay} open={openDesigns} onOpenChange={handleOpenDesigns}>
-                        <OneTwoHoverButton href="/designs" open={openDesigns}>
-                                <Menu.Item className={styles.navlink + isActivePage("/designs")}>UI/VISUAL DESIGNS</Menu.Item>
-                        </OneTwoHoverButton>
+                    <HoverCard.Root openDelay={hoverDelay} closeDelay={hoverDelay}>
+                        <HoverCard.Trigger asChild>
+                            <Menu.Link href="/designs" >
+                                    <Menu.Item className={styles.navlink + isActivePage("/designs")}>UI/VISUAL DESIGNS</Menu.Item>
+                            </Menu.Link>
+                        </HoverCard.Trigger>
                             <HoverCard.Content>
                                 <ul className="bg-[#173738] rounded text-center">
                                     <Link href="/designs#hotel-booking">
