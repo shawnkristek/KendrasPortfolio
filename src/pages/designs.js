@@ -6,7 +6,7 @@ export default function Designs(){
         <Main 
             meta={
                 <Meta
-                    title="UX Designs"
+                    title="Kendra Wright: UX Designs"
                     description="A collection of Kendra Wright's favorite UX Design projects."
                 />
             }

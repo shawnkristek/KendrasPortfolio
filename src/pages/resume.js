@@ -6,7 +6,7 @@ export default function Resume(){
         <Main 
             meta={
                 <Meta
-                    title="Resume"
+                    title="Kendra Wright: Resume"
                     description="Download Kendra Wright's UX Designer Resume."
                 />
             }
