@@ -17,6 +17,12 @@
   font-style: normal;
 }
 
+@layer components {
+  .avatar {
+    object-position: 42% 3%;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -41,14 +47,6 @@ body {
 h1 {
   font-size: 5em;
   line-height: .5;
-}
-
-.avatar {
-  border-radius: 50%;
-  width: 12rem;
-  height: 12rem;
-  object-fit: none;
-  object-position: 42% 3%;
 }
 
 .kwhite {
