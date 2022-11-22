@@ -86,7 +86,7 @@ export default function NavMenu() {
                                     <button onClick={handleEmailClick}>
                                         <li className={styles.navlink}>
                                             <div className={(copied ? " " : "hidden ") + "kwhite text-center"}>Copied!</div>
-                                            <div className={"flex flex-row items-center " + (!copied ? "" : "invisible h-0")}>Copy my email &nbsp;<CopyIcon /></div>
+                                            <div className={"flex flex-row items-center " + (!copied ? "" : "invisible h-0")}>Email me!&nbsp;<CopyIcon /></div>
                                         </li>
                                     </button>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kendrauxd">
