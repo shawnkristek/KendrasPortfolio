@@ -17,6 +17,16 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #835f02;
+  border-radius: 10px;
+}
+
 html,
 body {
   font-family: 'Raleway';
@@ -25,6 +35,7 @@ body {
   background-repeat: repeat;
   background-position: 0 -200px;
   color: #c5cdcd;
+  overflow: overlay;
 }
 
 h1 {
@@ -60,64 +71,6 @@ h1 {
   font-family: 'Raleway';
 }
 
-.nav-link,
-.drop-link {
-  position: relative;
-  margin: 0 1.25rem;
-  padding: 0.5rem 0;
-  font-size: 0.75em;
-}
-
-.nav-link.active {
-  color: #835f02;
-  font-weight: 600;
-}
-
-.nav-link:after,
-.drop-link:after {
-  position: absolute;
-  margin: auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0%;
-  color: transparent;
-  height: 3px;
-  content: '';
-  background-image: linear-gradient(90deg, #173738, #835f02, #173738);
-}
-
-.nav-link:hover,
-.drop-link:hover {
-  color: #835f02;
-  font-weight: 600;
-}
-
-.nav-link:hover:after,
-.drop-link:hover:after {
-  width: 100%;
-  transition: all 0.5s;
-}
-
-.nav-link.active:after {
-  width: 100%;
-}
-
-.dropdown {
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.drop-content {
-  display: none;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.9em;
-  text-align: left;
-}
-
-.dropdown:hover .drop-content {
-  display: block;
+.section {
+  max-width: calc(100vw - (100vw - 100%));
 }
