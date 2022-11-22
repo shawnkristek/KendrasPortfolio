@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import Meta from "../layouts/meta";
 import Main from "../layouts/main";
 
@@ -43,7 +45,9 @@ export default function SlideShowPage({
           <Video />
           <SlideShow slides={lejitSlides} className="hidden lg:block" />
           <SlideShow slides={lejitSlidesMobile} className="lg:hidden" mobile={true} />
-          <Button text="but wait, there's more!" />
+          <Link href="/designs">
+            <Button text="but wait, there's more!" />
+          </Link>
         </Section>
     </Main>
   );
