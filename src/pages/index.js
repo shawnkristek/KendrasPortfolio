@@ -1,8 +1,8 @@
-import {AppConfig} from '../utils/AppConfig';
+import {AppConfig} from 'utils/AppConfig';
 
-import Meta from '../layouts/meta';
-import Main from '../layouts/main';
-import Intro from '../components/intro';
+import Meta from 'layouts/meta';
+import Main from 'layouts/main';
+import Intro from 'components/intro';
 
 export default function Home() {
   return (

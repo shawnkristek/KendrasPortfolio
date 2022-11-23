@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Button from "../components/button";
+import Button from "components/button";
 
-import { AppConfig } from "../utils/AppConfig";
+import { AppConfig } from "utils/AppConfig";
 
 export default function Intro() {
   return (

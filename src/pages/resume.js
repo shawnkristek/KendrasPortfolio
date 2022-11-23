@@ -1,5 +1,5 @@
-import Meta from "../layouts/meta";
-import Main from "../layouts/main";
+import Meta from "layouts/meta";
+import Main from "layouts/main";
 
 export default function Resume(){
     return (
