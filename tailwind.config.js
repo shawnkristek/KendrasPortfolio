@@ -6,7 +6,6 @@ module.exports = {
     "./public/**/*.html",
   ],
   plugins: [
-    require('flowbite/plugin')
   ],
   safelist: [
     'w-64',
