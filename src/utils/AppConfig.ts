@@ -5,4 +5,5 @@ export const AppConfig = {
   title: 'Kendra Wright: UX Designer',
   description: "Hi! I'm Kendra Wright. A UX Designer in Salt Lake City, Utah.",
   locale: 'en',
+  email: 'kendrauxd@gmail.com',
 };

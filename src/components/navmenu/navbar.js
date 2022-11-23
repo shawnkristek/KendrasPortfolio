@@ -8,14 +8,16 @@ import * as HoverCard from "@radix-ui/react-hover-card";
 
 import { CopyIcon } from '@radix-ui/react-icons';
 
-import styles from "./navbar.module.css";
+import styles from "styles/navbar.module.css";
+
+import {AppConfig} from 'utils/AppConfig';
 
 export default function NavMenu() {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
 
     const handleEmailClick = () => {
-        navigator.clipboard.writeText("kendrauxd@gmail.com");
+        navigator.clipboard.writeText(AppConfig.email);
         setCopied(true);
         let timer = setTimeout(() => setCopied(false), 500);
     };

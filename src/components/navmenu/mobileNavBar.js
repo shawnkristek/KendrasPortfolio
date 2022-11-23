@@ -7,7 +7,9 @@ import * as Dialog from '@radix-ui/react-dialog';
 import * as DropDown from '@radix-ui/react-dropdown-menu';
 import { CopyIcon } from '@radix-ui/react-icons';
 
-import styles from './mobilenavbar.module.css';
+import styles from "styles/mobilenavbar.module.css";
+
+import {AppConfig} from 'utils/AppConfig';
 
 
 export default function MobileNavBar() {
@@ -15,7 +17,7 @@ export default function MobileNavBar() {
     const [copied, setCopied] = useState(false);
 
     const handleEmailClick = () => {
-        navigator.clipboard.writeText("kendrauxd@gmail.com");
+        navigator.clipboard.writeText(AppConfig.email);
         setCopied(true);
         let timer = setTimeout(() => setCopied(false), 500);
     };
