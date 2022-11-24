@@ -11,7 +11,6 @@ import styles from "styles/mobilenavbar.module.css";
 
 import {AppConfig} from 'utils/AppConfig';
 
-
 export default function MobileNavBar() {
     const router = useRouter();
     const [copied, setCopied] = useState(false);

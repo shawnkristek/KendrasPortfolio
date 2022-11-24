@@ -3,8 +3,8 @@ import MobileNavBar from './mobileNavBar';
 
 const NavMenu = () => {
     return (
-        <div className="z-50">
-            <NavBar />
+        <div>
+            <NavBar className="z-50"/>
             <MobileNavBar />
         </div>
     );
