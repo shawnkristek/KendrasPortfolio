@@ -29,6 +29,7 @@
     padding: 0.5rem 0;
     font-weight: 600;
     width: fit-content;
+    margin-bottom: 10px;
 }
 
 .navlink:after {

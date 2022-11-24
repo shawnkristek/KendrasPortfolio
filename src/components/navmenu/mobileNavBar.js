@@ -11,7 +11,6 @@ import styles from "styles/mobilenavbar.module.css";
 
 import {AppConfig} from 'utils/AppConfig';
 
-
 export default function MobileNavBar() {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
@@ -78,7 +77,7 @@ export default function MobileNavBar() {
                                             <div className={"flex flex-row items-center " + (!copied ? "" : "invisible h-0")}>Email me!&nbsp;<CopyIcon /></div>
                                         </li>
                                     </button>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kendrauxd">
+                                    <a target="_blank" rel="noopener noreferrer" href={AppConfig.linkedin}>
                                         <li className={styles.navlink}>LinkedIn</li>
                                     </a>
                                 </ul>
