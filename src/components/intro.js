@@ -5,19 +5,19 @@ import Button from "components/button";
 
 import { AppConfig } from "utils/AppConfig";
 
+import Kendra from "../../public/images/kendra-wright.jpg";
+
 export default function Intro() {
   return (
     <div className="w-full flex flex-col justify-center gap-10 xl:gap-20 pt-10 xl:flex-row">
       <div className="flex justify-center">
         <Image
-          width={834}
-          height={1072}
-          src="/images/kendra_834x1072.jpg"
-          alt="Kendra Wright"
-          className="lg:max-w-lg lg:h-auto lg:rounded-2xl lg:flex p-1 ring-2 ring-[#835f02] lg:object-cover rounded-full h-48 w-48 lg:w-full object-none avatar"
+          priority
+          src={Kendra}
+          className="lg:max-w-lg lg:h-auto lg:rounded-2xl lg:flex p-1 ring-2 ring-[#835f02] object-cover rounded-full h-48 w-48 lg:w-full avatar"
         />
       </div>
-      <div className="text-center ">
+      <div className="text-center flex flex-col justify-center">
         <h1 className="brown-sugar gold mb-10">{AppConfig.fullName}</h1>
         <p className="max-w-sm mx-auto lg:max-w-lg">
           Hey, I’m {AppConfig.firstName}! I’m a UX Designer in Salt Lake City. I’ve always been creative and a problem
