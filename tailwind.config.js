@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./node_modules/flowbite-react/**/*.js",
+    "./node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
     "./src/**/*.{js,jsx,ts,tsx,html}",
     "./public/**/*.html",
   ],
@@ -32,7 +32,7 @@ module.exports = {
       sm: ['0.875rem', '1.25rem'],
       base: ['1rem', '1.5rem'],
       lg: ['1.5rem', '1.5rem'],
-      xl: ['1.75rem', '2rem'],
+      xl: ['1.65rem', '1.85rem'],
       '2xl': ['2rem', '2.75rem'],
       '3xl': ['3.5rem', '3.875rem'],
       '4xl': ['8rem', '3rem'],
