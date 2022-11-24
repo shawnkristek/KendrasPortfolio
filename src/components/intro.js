@@ -9,15 +9,15 @@ import Kendra from "../../public/images/kendra-wright.jpg";
 
 export default function Intro() {
   return (
-    <div className="w-full flex flex-col justify-center gap-10 xl:gap-20 pt-10 xl:flex-row">
+    <div className="w-full flex flex-col justify-center gap-10 xl:gap-20 pt-5 lg:pt-10 xl:flex-row">
       <div className="flex justify-center">
         <Image
           priority
           src={Kendra}
-          className="lg:max-w-lg lg:h-auto lg:rounded-2xl lg:flex p-1 ring-2 ring-[#835f02] object-cover rounded-full h-48 w-48 lg:w-full avatar"
+          className="lg:max-w-lg lg:h-auto lg:rounded-2xl lg:flex p-1 ring-2 ring-[#835f02] object-cover rounded-full h-56 w-56 lg:w-full avatar"
         />
       </div>
-      <div className="text-center flex flex-col justify-center">
+      <div className="text-center flex flex-col justify-center mx-7">
         <h1 className="brown-sugar gold mb-10">{AppConfig.fullName}</h1>
         <p className="max-w-sm mx-auto lg:max-w-lg">
           Hey, I’m {AppConfig.firstName}! I’m a UX Designer in Salt Lake City. I’ve always been creative and a problem
