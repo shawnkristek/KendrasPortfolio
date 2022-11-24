@@ -23,7 +23,7 @@ export default function Resume() {
 
   const SocialButtons = ({...props}) => {
     return (
-      <div className={`flex flex-row gap-3 px-1 py-2 justify-center lg:justify-start w-full ${props.className}`}>
+      <div className={`flex flex-row gap-5 px-1 py-2 justify-center lg:justify-start w-full ${props.className}`}>
         <button onClick={handleEmailClick}>
           <Image src={LetterIcon} alt="email icon" className={copied ? "hidden" : ""} />
           <Image src={CopyIcon} alt="copy icon" className={!copied ? "hidden" : ""} />
@@ -44,11 +44,11 @@ export default function Resume() {
   return (
     <Main meta={<Meta title="Kendra Wright: Resume" description="Download Kendra Wright's UX Designer Resume." />}>
       <div className="flex justify-center">
-        <div className="w-[60%] flex flex-col justify-center items-center">
+        <div className="w-[75%] flex flex-col justify-center items-center">
           <SocialButtons />
-          <div className="flex gap-10 flex-col justify-start items-center lg:justify-center lg:flex-row">
-            <Image src={ResumePage1} className="object-contain w-[80%] lg:w-[50%]" priority />
-            <Image src={ResumePage2} className="object-contain w-[80%] lg:w-[50%]" priority />
+          <div className="pt-2 flex gap-10 flex-col justify-start items-center lg:justify-center lg:flex-row">
+            <Image src={ResumePage1} className="object-contain w-full lg:w-[50%]" priority />
+            <Image src={ResumePage2} className="object-contain w-full lg:w-[50%]" priority />
           </div>
         </div>
       </div>
