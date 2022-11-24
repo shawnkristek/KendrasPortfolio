@@ -50,7 +50,6 @@ export default function Resume() {
             <Image src={ResumePage1} className="object-contain w-[80%] lg:w-[50%]" priority />
             <Image src={ResumePage2} className="object-contain w-[80%] lg:w-[50%]" priority />
           </div>
-          <SocialButtons className="lg:hidden" />
         </div>
       </div>
     </Main>
