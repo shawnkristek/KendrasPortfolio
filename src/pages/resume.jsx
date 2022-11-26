@@ -7,8 +7,8 @@ import Meta from "layouts/meta";
 import Main from "layouts/main";
 
 import Section from 'components/section';
-import { ResumePage1, ResumePage2 } from "components/resumeImages";
-import { DribbbleIcon, LinkedInIcon, LetterIcon, DownloadIcon, CopyIcon } from "components/icons";
+import { ResumePage1, ResumePage2 } from "lib/resumeImages";
+import { DribbbleIcon, LinkedInIcon, LetterIcon, DownloadIcon, CopyIcon } from "lib/icons";
 
 import { AppConfig } from "utils/AppConfig";
 
@@ -23,9 +23,9 @@ export default function Resume() {
     let timer = setTimeout(() => setCopied(false), 500);
   };
 
-  const SocialButtons = ({ ...props }) => {
+  const SocialButtons = () => {
     return (
-      <div className={`flex flex-row gap-5 px-1 py-2 justify-center lg:justify-start w-full ${props.className}`}>
+      <div className={`flex flex-row gap-5 px-1 py-2 justify-center lg:justify-start w-full`}>
         <button onClick={handleEmailClick}>
           <Image src={LetterIcon} alt="email icon" className={copied ? "hidden" : ""} />
           <Image src={CopyIcon} alt="copy icon" className={!copied ? "hidden" : ""} />
@@ -58,7 +58,7 @@ export default function Resume() {
 
   return (
     <Main meta={<Meta title="Kendra Wright: Resume" description="Download Kendra Wright's UX Designer Resume." />}>
-      <Section darktheme={false}>
+      <Section>
         <ResumeComp />
       </Section>
     </Main >
