@@ -10,7 +10,7 @@ export default function Main({ children, meta, ...props }) {
             <div className="my-auto lg:text-xl">
                 {children}
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

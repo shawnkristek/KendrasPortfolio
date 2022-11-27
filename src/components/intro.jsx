@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Button from "components/button";
+import Footer from 'components/footer';
 
 import { AppConfig } from "utils/AppConfig";
 
@@ -46,6 +47,7 @@ const AboutKendra = () => {
       <Link href="/case-studies" className="flex justify-center pt-[0.5rem]">
         <Button text="Check out my work" className={styles.button} />
       </Link>
+      <Footer />
     </div>
   )
 }
