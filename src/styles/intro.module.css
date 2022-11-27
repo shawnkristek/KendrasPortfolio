@@ -23,7 +23,7 @@
 @media (orientation: landscape) {
   .container {
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-content: center;
     align-items: center;
