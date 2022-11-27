@@ -133,7 +133,7 @@ export default function NavMenu() {
 
 const Link = ({ href, ...props }) => {
   const router = useRouter();
-  const isActive = router.asPath === href;
+  const isActive = (router.asPath === href) && !href.includes('#'); 
 
   return (
     <Menu.Link href={href} className={`${styles.navlink} ${props.className}`} active={isActive} {...props} />
