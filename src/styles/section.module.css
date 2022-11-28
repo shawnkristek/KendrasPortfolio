@@ -10,6 +10,8 @@
 }
 
 .sectionContent {
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
 }
   
 @media (orientation: landscape) {
@@ -21,6 +23,7 @@
 
 @media (orientation: portrait) {
   .sectionContent {
-    height: 80%;
+    height: 90%;
+    /* width: 100%; */
   }
 }

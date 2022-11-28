@@ -67,6 +67,12 @@
     }
   }
 
+  @media (max-height: 650px) {
+    .copy {
+      font-size: 1rem;
+    }
+  }
+
   @media (max-height: 450px) {
     .copy {
       font-size: 0.65rem;
