@@ -5,7 +5,7 @@ import Main from "layouts/main";
 
 import Section from 'components/section';
 import { HotelDesign } from 'components/hotelDesign';
-import { BookishDesign } from 'components/BookishDesign';
+import { BookishDesign } from 'components/bookishDesign';
 import { EmailDesign } from 'components/emailDesign';
 
 
@@ -19,21 +19,16 @@ export default function Designs() {
                 />
             }
         >
-            <Section className="">
-                <div className='w-[80%] xl:w-[60%] mx-auto'>
-                    <HotelDesign />
-                </div>
+            <Section id="hotel" contentClassNames="w-full">
+                <HotelDesign />
             </Section>
-            <Section darktheme={false}>
-                <div className='w-[80%] xl:w-[60%] mx-auto'>
-                    <BookishDesign />
-                </div>
+            <Section id="mobile-email" darktheme={false} contentClassNames="w-full">
+                <EmailDesign />
             </Section>
-            <Section >
-                <div className='w-[80%] xl:w-[60%] mx-auto'>
-                    <EmailDesign />
-                </div>
+            <Section id="book-box" contentClassNames="w-full">
+                <BookishDesign />
             </Section>
         </Main>
     );
 }
+

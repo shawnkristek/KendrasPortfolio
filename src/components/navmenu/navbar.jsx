@@ -72,13 +72,13 @@ export default function NavMenu() {
                     </Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link href="/designs#book-box">
-                      Book Box
+                    <Link href="/designs#mobile-email">
+                      Mobile Email
                     </Link>
                   </Menu.Item>
                   <Menu.Item>
-                    <Link href="/designs#in-progress">
-                      Mobile Email
+                    <Link href="/designs#book-box">
+                      Book Box
                     </Link>
                   </Menu.Item>
 
