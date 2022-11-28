@@ -6,11 +6,13 @@ import Link from "next/link";
 import Meta from "layouts/meta";
 import Main from "layouts/main";
 
-import { ResumePage1, ResumePage2 } from "components/resumeImages";
-
-import { DribbbleIcon, LinkedInIcon, LetterIcon, DownloadIcon, CopyIcon } from "components/icons";
+import Section from 'components/section';
+import { ResumePage1, ResumePage2 } from "lib/resumeImages";
+import { DribbbleIcon, LinkedInIcon, LetterIcon, DownloadIcon, CopyIcon } from "lib/icons";
 
 import { AppConfig } from "utils/AppConfig";
+
+import styles from 'styles/resume.module.css';
 
 export default function Resume() {
   const [copied, setCopied] = useState(false);
@@ -21,9 +23,9 @@ export default function Resume() {
     let timer = setTimeout(() => setCopied(false), 500);
   };
 
-  const SocialButtons = ({...props}) => {
+  const SocialButtons = () => {
     return (
-      <div className={`flex flex-row gap-5 px-1 py-2 justify-center lg:justify-start w-full ${props.className}`}>
+      <div className={`flex flex-row gap-5 px-1 py-2 justify-center lg:justify-start w-full`}>
         <button onClick={handleEmailClick}>
           <Image src={LetterIcon} alt="email icon" className={copied ? "hidden" : ""} />
           <Image src={CopyIcon} alt="copy icon" className={!copied ? "hidden" : ""} />
@@ -41,17 +43,24 @@ export default function Resume() {
     );
   };
 
-  return (
-    <Main meta={<Meta title="Kendra Wright: Resume" description="Download Kendra Wright's UX Designer Resume." />}>
-      <div className="flex justify-center">
-        <div className="w-[75%] flex flex-col justify-center items-center">
-          <SocialButtons />
-          <div className="pt-2 flex gap-10 flex-col justify-start items-center lg:justify-center lg:flex-row">
-            <Image src={ResumePage1} className="object-contain w-full lg:w-[50%]" priority />
-            <Image src={ResumePage2} className="object-contain w-full lg:w-[50%]" priority />
-          </div>
+  const ResumeComp = () => {
+    return (
+      <div className="h-full">
+        <SocialButtons />
+        <div className={styles.resumePages}>
+          {/* <Image src={ResumePage1} priority />
+          <Image src={ResumePage2} priority /> */}
         </div>
       </div>
-    </Main>
+
+    )
+  }
+
+  return (
+    <Main meta={<Meta title="Kendra Wright: Resume" description="Download Kendra Wright's UX Designer Resume." />}>
+      <Section>
+        <ResumeComp />
+      </Section>
+    </Main >
   );
 }

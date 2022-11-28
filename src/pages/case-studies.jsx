@@ -10,7 +10,6 @@ import Button from "components/button";
 
 import { getAllSlides } from "lib/slides";
 
-import styles from "styles/casestudies.module.css";
 
 export default function SlideShowPage({
   kindleSlides,
@@ -30,42 +29,48 @@ export default function SlideShowPage({
         />
       }
     >
-      <div className={`${styles.sectionsContainer}`}>
-          <Section id="kindle-book-clubs" className={`gap-20`} >
-            <div className="flex flex-col justify-center align-middle w-1/4">
-              <Video videoUrl="https://www.youtube.com/embed/ZVuToMilP0A" className="" />
+      <div className="">
+        <Section id="kindle-book-clubs" className="" contentClassNames="pt-10" >
+          <div className="h-full w-full flex flex-col justify-center align-middle items-center">
+            <div className="h-full w-[60%] flex flex-col justify-center align-middle">
+              <Video videoUrl="https://www.youtube.com/embed/iCUQ5gxlOe0" className="" />
             </div>
-            <div className="flex flex-col justify-center align-middle w-5/12 h-[41.666667%]">
+            <div className="flex flex-col justify-center align-middle items-center">
               <SlideShow slides={kindleSlides} className="" aboveFold={true} scale={0.75} />
             </div>
             {/* <SlideShow slides={kindleSlides} className="hidden h-0 lg:flex lg:h-auto" aboveFold={true} scale={0.75} /> */}
             {/* <SlideShow slides={kindleSlidesMobile} className="lg:hidden" aboveFole={true} scale={1} /> */}
-          </Section>
+          </div>
+        </Section>
 
-          <Section id="matchbox-marketplace" darktheme={false} className="gap-20">
-            <div className="flex flex-col justify-center align-middle w-1/4">
-              <Video videoUrl="https://www.youtube.com/embed/ZVuToMilP0A" className="" />
+        <Section id="matchbox-marketplace" darktheme={false} className="">
+          <div className="h-full flex flex-col gap-5 lg:gap-10 justify-center align-center items-center">
+            <div className="h-full w-[60%] flex flex-col justify-center align-middle">
+              <Video videoUrl="https://www.youtube.com/embed/jopFVQT8m3A" className="" />
             </div>
-            <div className="flex flex-col justify-center align-middle w-5/12 h-[41.666667%]">
+            <div className="flex flex-col justify-center align-middle">
               <SlideShow slides={matchboxSlides} className="" aboveFold={false} scale={0.75} darktheme={false} />
             </div>
             {/* <SlideShow slides={matchboxSlides} darktheme={false} className="hidden lg:flex" scale={0.75} /> */}
             {/* <SlideShow slides={matchboxSlidesMobile} className="lg:hidden" darktheme={false} mobile={true} /> */}
-          </Section>
+          </div>
+        </Section>
 
-          <Section id="in-progress" className="gap-10">
-            <div className="flex flex-col justify-center align-middle w-1/4">
+        <Section id="in-progress" className="">
+          {/* <div className="flex flex-col justify-center align-middle w-1/4">
               <Video videoUrl="https://www.youtube.com/embed/ZVuToMilP0A" className="" />
-            </div>
+            </div> */}
+          <div className="h-full flex flex-col gap-5 lg:gap-10 align-middle justify-center items-center">
             <div className="flex flex-col justify-center align-middle">
               <SlideShow slides={lejitSlides} className="" scale={0.75} />
             </div>
             {/* <SlideShow slides={lejitSlides} className="hidden lg:flex" scale={0.75} /> */}
             {/* <SlideShow slides={lejitSlidesMobile} className="lg:hidden" mobile={true} /> */}
-            <Link href="/designs">
+            <Link href="/designs" className="flex justify-center ">
               <Button text="but wait, there's more!" />
             </Link>
-          </Section>
+          </div>
+        </Section>
       </div>
     </Main>
   );

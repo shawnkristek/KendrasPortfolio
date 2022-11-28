@@ -8,3 +8,22 @@
   scroll-snap-align: center;
   position: relative;
 }
+
+.sectionContent {
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
+}
+  
+@media (orientation: landscape) {
+  .sectionContent {
+    height: 80%;
+    max-width: 80vw;
+  }
+}
+
+@media (orientation: portrait) {
+  .sectionContent {
+    height: 90%;
+    /* width: 100%; */
+  }
+}
