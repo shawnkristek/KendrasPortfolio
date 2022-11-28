@@ -22,6 +22,9 @@
 }
 
 @media (orientation: portrait) {
+  .section {
+    height: auto;
+  }
   .sectionContent {
     height: 90%;
     /* width: 100%; */
