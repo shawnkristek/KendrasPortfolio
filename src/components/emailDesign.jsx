@@ -24,13 +24,12 @@ const EmailDesign = () => {
       <div className={`h-full w-full flex-col justify-center align-middle items-center`}>
         {/* prototype */}
         <iframe
-          // className='h-full aspect-video'
           className={`${pressed ? "hidden" : ""} h-full w-full flex-col justify-center align-middle items-center`}
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgkdkNmPxaW2Q4D3DlFcFT5%2F%25E2%259C%2585-Kendra-Wright---L5%3Fpage-id%3D569%253A2%26node-id%3D1328%253A2857%26viewport%3D-844%252C-379%252C0.2%26scaling%3Dscale-down%26starting-point-node-id%3D1328%253A2857"
           allowFullScreen
         ></iframe>
         {/* component images */}
-        <div className='h-full w-full flex justify-center align-middle' >
+        <div className={`${!pressed ? "hidden" : ""} h-full w-full flex justify-center align-middle`} >
           <EmailDesignComponents className={`${!pressed ? "hidden" : ""}`} />
         </div>
       </div>

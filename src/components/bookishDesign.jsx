@@ -25,13 +25,12 @@ const BookishDesign = () => {
       <div className={`h-full w-full flex-col justify-center align-middle items-center`}>
         {/* prototype */}
         <iframe
-          // className='h-full aspect-video'
           className={`${pressed ? "hidden" : ""} h-full w-full flex-col justify-center align-middle items-center`}
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FpRDvc4Jr0qdDlzByQ07XOS%2FKendra-Wright-Portfolio%3Fpage-id%3D11%253A3964%26node-id%3D11%253A6014%26viewport%3D310%252C367%252C0.07%26scaling%3Dscale-down%26starting-point-node-id%3D11%253A6014"
           allowFullScreen
         ></iframe>
         {/* component images */}
-        <div className='h-full w-full flex justify-center align-middle' >
+        <div className={`${!pressed ? "hidden" : ""} h-full w-full flex justify-center align-middle`} >
           <BookishDesignComponents className={`${!pressed ? "hidden" : ""}`} />
         </div>
       </div>
