@@ -1,0 +1,48 @@
+.container {
+  padding: 0 1rem 2rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 100vh;
+    padding: 4rem 7rem;
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo {
+    width: 20em;
+    height: auto;
+  }
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  .split {
+    align-items: center;
+  }
+  .split > * {
+  }
+  .split > * + * {
+    padding-top: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
