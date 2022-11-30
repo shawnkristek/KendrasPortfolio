@@ -7,6 +7,8 @@ import HotelMobileHeader from "../../public/images/design/hotel/mobile-header.pn
 import HotelMobileStatusStepper from "../../public/images/design/hotel/mobile-status-stepper.png"
 import HotelRoomOptionsBar from "../../public/images/design/hotel/room-options-bar.png"
 import HotelSummaryWidget from "../../public/images/design/hotel/summary-widget.png"
+import HotelDesktop from "../../public/images/design/hotel/hotel-desktop.png"
+import HotelMobile from "../../public/images/design/hotel/hotel-mobile.png"
 
 import BookCartWishList from "../../public/images/design/bookish/cart-wishlist-buttons.png"
 import BookColorPalette from "../../public/images/design/bookish/color-palette.png"
@@ -16,6 +18,9 @@ import BookHero from "../../public/images/design/bookish/hero-banner.png"
 import BookItem from "../../public/images/design/bookish/item-counter-headers.png"
 import BookLogo from "../../public/images/design/bookish/logo.png"
 import BookSummary from "../../public/images/design/bookish/order-summary.png"
+import BookBoxMobile from "../../public/images/design/bookish/book-box-mobile.png"
+import BookBoxDesktop from "../../public/images/design/bookish/book-box-desktop.png"
+
 
 import EmailColorPalette from "../../public/images/design/email/color-palette.png"
 import EmailOverlay from "../../public/images/design/email/compose-message-overlay.png"
@@ -24,6 +29,7 @@ import EmailExamples from "../../public/images/design/email/email-examples.png"
 import EmailFont from "../../public/images/design/email/font.png"
 import EmailHighlight from "../../public/images/design/email/highlighted-email.png"
 import EmailUndo from "../../public/images/design/email/undo-overlay.png"
+import EmailInbox from "../../public/images/design/email/email-inbox.png"
 
 export {
     HotelCalendar,
@@ -35,6 +41,8 @@ export {
     HotelMobileStatusStepper,
     HotelRoomOptionsBar,
     HotelSummaryWidget,
+    HotelDesktop,
+    HotelMobile,
 }
 
 export {
@@ -46,6 +54,8 @@ export {
     BookSummary,
     BookCartWishList,
     BookNavBar,
+    BookBoxDesktop,
+    BookBoxMobile,
 }
 
 export {
@@ -56,4 +66,5 @@ export {
     EmailHighlight,
     EmailOverlay,
     EmailUndo,
+    EmailInbox,
 }

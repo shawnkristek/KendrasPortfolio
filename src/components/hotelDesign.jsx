@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState } from "react";
+import Image from "next/image";
 
 import {
   HotelCalendar,
@@ -11,7 +11,11 @@ import {
   HotelMobileHeader,
   HotelRoomOptionsBar,
   HotelSummaryWidget,
-} from 'lib/designImages';
+  HotelDesktop,
+  HotelMobile,
+} from "lib/designImages";
+
+import styles from "styles/designs.module.css";
 
 const HotelDesign = () => {
   const [pressed, setPressed] = useState(false);
@@ -21,32 +25,53 @@ const HotelDesign = () => {
   };
 
   return (
-    <div className="h-full w-full flex flex-col justify-center align-middle items-center">
-      <div className={`h-full w-full flex-col justify-center align-middle items-center`}>
-        {/* prototype */}
-        <iframe
-          className={`${pressed ? "hidden" : ""} h-full w-full flex-col justify-center align-middle items-center`}
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgkdkNmPxaW2Q4D3DlFcFT5%2F%25E2%259C%2585-Kendra-Wright---L5%3Fpage-id%3D1172%253A1368%26node-id%3D1209%253A1601%26viewport%3D-3817%252C1247%252C0.48%26scaling%3Dscale-down%26starting-point-node-id%3D1158%253A1203"
-          allowFullScreen
-        ></iframe>
-        {/* component images */}
-        <div className={`${!pressed ? "hidden" : ""} h-full w-full flex justify-center align-middle`} >
-          <HotelDesignComponents className={`${!pressed ? "hidden" : ""}`} />
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className="">
+          <div className={`${!pressed ? "hidden" : ""} flex justify-center`}>
+            <HotelDesignComponents />
+          </div>
+          <div className={`${pressed ? "hidden" : ""}`}>
+            <div className={`${styles.container}`}>
+              <div>
+                <h2 className="raleway kwhite text-[1rem] lg:text-[1.2rem] text-center">
+                  l'Hotel Paris - UI/Visual design and branding for a Parisian hotel's desktop and mobile booking flow
+                </h2>
+              </div>
+              <div className={styles.split}>
+                <div>
+                  <Image src={HotelDesktop} alt="mockup of a design for a Parisian hotel's desktop booking flow" />
+                </div>
+                <div>
+                  <Image src={HotelMobile} alt="mockup of a design for a Parisian hotel's mobile booking flow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="underline text-[1rem] text-center">
+          <a target="_blank" rel="noopener noreferrer" 
+            href="https://www.figma.com/proto/gkdkNmPxaW2Q4D3DlFcFT5/%E2%9C%85-Kendra-Wright---L5?page-id=1172%3A1368&node-id=1158%3A1203&viewport=340%2C261%2C0.03&scaling=scale-down&starting-point-node-id=1158%3A1203"
+          >
+            Figma Prototype
+          </a>
+        </div>
+        <div className="flex justify-center">
+          <button onClick={handlePressed} className={`bg-[#835f02] focus:ring-1 focus-outline-none ring-[#c5cdcd] shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center hover:scale-105 hover:ring-2 transistion duration-200 font-semibold ${pressed ? "bg-[#c5cdcd] text-[#835f02]" : ""}`}>
+            <span className={`${!pressed ? "hidden" : ""}`} >Mockups</span>
+            <span className={`${pressed ? "hidden" : ""}`}>Components</span>
+          </button>
         </div>
       </div>
-      {/* toggle switch */}
-      <button onClick={handlePressed} className={`bg-[#835f02] focus:ring-1 focus-outline-none ring-[#c5cdcd] shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center hover:scale-105 hover:ring-2 transistion duration-200 font-semibold mt-8 ${pressed ? "bg-[#c5cdcd] text-[#835f02]" : ""}`}>
-        <span className={`${!pressed ? "hidden" : ""}`} >Figma Prototype</span>
-        <span className={`${pressed ? "hidden" : ""}`}>Component Images</span>
-      </button>
-    </div>
+    </section>
   );
-}
+};
 
 const HotelDesignComponents = ({ className, ...props }) => {
   return (
-    <div className={`${className} h-full max-w-max flex flex-col justify-center align-middle gap-5 lg:gap-10`}>
-      <div className='flex flex-row justify-between'>
+    <div className={`${className} h-full max-w-max flex flex-col justify-center align-middle`}>
+      <div className="flex flex-row justify-between">
         <div>
           <Image className="" src={HotelColorPalette} alt="color palette" />
         </div>
@@ -58,26 +83,65 @@ const HotelDesignComponents = ({ className, ...props }) => {
         </div>
       </div>
 
-      <div className='flex flex-row'>
+      <div className="flex flex-row py-5">
         <Image className="" src={HotelDesktopNavBar} alt="desktop navbar" />
       </div>
 
-      <div className='h-fit flex flex-row justify-between'>
+      <div className="h-fit flex flex-row justify-between py-5">
         <div>
           <div className="h-full flex flex-col jusitfy-end">
             <div>
               <Image className="" src={HotelMobileHeader} alt="mobile header" />
             </div>
-            <div className='h-full flex flex-col justify-end'>
-              <div className='bg-white flex justify-center'>
+            <div className="h-full flex flex-col justify-end">
+              <div className="bg-white flex justify-center">
                 <Image className="" src={HotelRoomOptionsBar} alt="room options bar" />
               </div>
             </div>
           </div>
         </div>
+        <div className="">
+          <Image className="" src={HotelCalendar} alt="calendar" />
+        </div>
+        <div>
+          <Image className="" src={HotelCheckout} alt="checkout" />
+        </div>
+        <div>
+          <Image className="" src={HotelSummaryWidget} alt="summary widget" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const HotelComponents = () => {
+  return (
+    <div className={styles.mobilecontainer}>
+
+      <div className={styles.row}>
+        <div>
+          <Image className="" src={HotelColorPalette} alt="color palette" />
+        </div>
+        <div>
+          <Image className="" src={HotelFonts} alt="fonts" />
+        </div>
+      </div>
+
+      <div className={styles.row}>
+        <div className={styles.column}>
+          <div>
+            <Image className="" src={HotelMobileHeader} alt="mobile header" />
+          </div>
+          <div>
+            <Image className="" src={HotelMobileStatusStepper} alt="mobile status stepper" />
+          </div>
+        </div>
         <div>
           <Image className="" src={HotelCalendar} alt="calendar" />
         </div>
+      </div>
+
+      <div className={styles.row}>
         <div>
           <Image className="" src={HotelCheckout} alt="checkout" />
         </div>
@@ -89,6 +153,4 @@ const HotelDesignComponents = ({ className, ...props }) => {
   )
 }
 
-export {
-  HotelDesign,
-}
+export { HotelDesign };
