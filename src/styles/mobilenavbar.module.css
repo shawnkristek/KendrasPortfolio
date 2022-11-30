@@ -30,6 +30,7 @@
     font-weight: 600;
     width: fit-content;
     margin-top: 0.75rem;
+    font-size: 0.75em;
 }
 
 .navlink:after {
