@@ -26,7 +26,7 @@ const BookishDesign = () => {
 
   return (
     <section className={styles.section}>
-      <div className="flex flex-col h-full justify-end">
+      <div className="h-full">
         <div className={styles.container}>
           <div className="">
             {/* <div className={`${!pressed ? "hidden" : ""} flex justify-center`}>
@@ -52,7 +52,7 @@ const BookishDesign = () => {
           </div>
           <div className="underline text-[1rem] text-center">
             <a target="_blank" rel="noopener noreferrer"
-              href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FpRDvc4Jr0qdDlzByQ07XOS%2FKendra-Wright-Portfolio%3Fpage-id%3D11%253A3964%26node-id%3D11%253A6014%26viewport%3D310%252C367%252C0.07%26scaling%3Dscale-down%26starting-point-node-id%3D11%253A6014"
+              href="https://www.figma.com/proto/pRDvc4Jr0qdDlzByQ07XOS/Kendra-Wright-Portfolio?page-id=11%3A3964&node-id=11%3A6014&viewport=163%2C517%2C0.09&scaling=scale-down&starting-point-node-id=11%3A6014&show-proto-sidebar=1"
             >
               <button className={`bg-[#835f02] focus:ring-1 focus-outline-none ring-[white] shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center hover:scale-105 hover:ring-2 transistion duration-200 font-semibold ${pressed ? "bg-[white] text-[#835f02]" : ""}`}>
                 Figma Prototype

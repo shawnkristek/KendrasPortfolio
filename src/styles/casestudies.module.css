@@ -30,6 +30,9 @@
   .section {
     padding: 4rem 3rem 2rem 3rem;
   }
+  .firstsection {
+    padding-top: 2%;
+  }
 }
 
 .videocontainer {

@@ -25,8 +25,8 @@ const HotelDesign = () => {
   };
 
   return (
-    <section className={styles.section}>
-      <div className="flex flex-col h-full justify-end">
+    <section className={`${styles.section} ${styles.firstsection} `}>
+      <div className="h-full">
         <div className={styles.container}>
           <div className="">
             {/* <div className={`${!pressed ? "hidden" : ""} flex justify-center`}>
@@ -53,7 +53,7 @@ const HotelDesign = () => {
 
           <div className="underline text-[1rem] text-center">
             <a target="_blank" rel="noopener noreferrer"
-              href="https://www.figma.com/proto/gkdkNmPxaW2Q4D3DlFcFT5/%E2%9C%85-Kendra-Wright---L5?page-id=1172%3A1368&node-id=1158%3A1203&viewport=340%2C261%2C0.03&scaling=scale-down&starting-point-node-id=1158%3A1203"
+              href="https://www.figma.com/proto/gkdkNmPxaW2Q4D3DlFcFT5/%E2%9C%85-Kendra-Wright---L5?page-id=1172%3A1368&node-id=1158%3A1203&viewport=340%2C261%2C0.03&scaling=scale-down&starting-point-node-id=1158%3A1203&show-proto-sidebar=1"
             >
               <button className={`bg-[#835f02] focus:ring-1 focus-outline-none ring-[white] shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center hover:scale-105 hover:ring-2 transistion duration-200 font-semibold ${pressed ? "bg-[white] text-[#835f02]" : ""}`}>
                 Figma Prototype

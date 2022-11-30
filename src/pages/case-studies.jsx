@@ -30,7 +30,7 @@ export default function SlideShowPage({
     >
       <div className="">
 
-        <div id="kindle-book-clubs" className={styles.section} >
+        <div id="kindle-book-clubs" className={`${styles.section} ${styles.firstsection}`} >
           <div className={styles.vsplit}>
             <div className="flex justify-center pb-3">
               <iframe

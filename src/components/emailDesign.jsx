@@ -24,7 +24,7 @@ const EmailDesign = () => {
 
   return (
     <section className={`${styles.section} bg-neutral`}>
-      <div className="flex flex-col h-full justify-end">
+      <div className="h-full">
         <div className={styles.container}>
           <div className="">
             {/* <div className={`${!pressed ? "hidden" : ""} flex justify-center`}>
@@ -48,7 +48,7 @@ const EmailDesign = () => {
           {/* <div className="underline teal text-[1rem] text-center"> */}
           <div className='text-center'>
             <a target="_blank" rel="noopener noreferrer"
-              href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgkdkNmPxaW2Q4D3DlFcFT5%2F%25E2%259C%2585-Kendra-Wright---L5%3Fpage-id%3D569%253A2%26node-id%3D1328%253A2857%26viewport%3D-844%252C-379%252C0.2%26scaling%3Dscale-down%26starting-point-node-id%3D1328%253A2857"
+              href="https://www.figma.com/proto/gkdkNmPxaW2Q4D3DlFcFT5/%E2%9C%85-Kendra-Wright---L5?page-id=569%3A2&node-id=1328%3A2857&viewport=-1383%2C-747%2C0.28&scaling=scale-down&starting-point-node-id=1328%3A2857&show-proto-sidebar=1"
             >
               <button className={`bg-[#835f02] focus:ring-1 focus-outline-none ring-[white] shadow-sm shadow-[#835f02]/50 rounded-lg text-sm px-5 py-2.5 text-center hover:scale-105 hover:ring-2 transistion duration-200 font-semibold ${pressed ? "bg-[white] text-[#835f02]" : ""}`}>
                 Figma Prototype
