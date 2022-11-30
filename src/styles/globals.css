@@ -4,20 +4,29 @@
 
 /* reset */
 @font-face {
-  font-family: 'Brown Sugar';
-  src: url('/fonts/BrownSugar.woff2');
+  font-family: "Brown Sugar";
+  src: url("/fonts/BrownSugar.woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('/fonts/Raleway-Regular.woff2');
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Regular.woff2");
   font-weight: 400;
   font-style: normal;
 }
 
-  
+:root {
+  --ff-primary: "Raleway", sans-serif;
+  --ff-accent: "Brown Sugar", serif;
+
+  --clr-primary-400: #173738;
+
+  --clr-neutral-400: #c5cdcd;
+
+  --clr-accent-400: #835f02;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -29,42 +38,121 @@
   border-radius: 10px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 html,
 body {
-  font-family: 'Raleway';
-  background-color: #173738;
-  background-image: url('/images/bgPattern_05.png');
+  font-family: var(--ff-primary);
+  background-color: var(--clr-primary-400);
+  background-image: url("/images/bgPattern_05.png");
   background-repeat: repeat;
   background-position: 0 -200px;
-  color: #c5cdcd;
+  color: var(--clr-neutral-400);
   overflow: overlay;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-accent);
+  color: var(--clr-accent-400);
 }
 
 h1 {
   font-size: 5em;
-  line-height: .5;
+  line-height: 0.5;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header,
+section {
+  padding: 1rem 1rem;
+}
+@media (min-width: 1024px) {
+  header,
+  section {
+    padding: 7rem 7rem;
+  }
+}
+
+.mycontainer {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+.mycontainer--narrow {
+  max-width: 34rem;
+}
+
+.bg-neutral {
+  background-color: var(--clr-neutral-400);
+}
+
+.bg-primary {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-400);
+}
+
+.bg-accent {
+  color: var(--clr-netural-400);
+  background-color: var(--clr-accent-400);
+}
+
+
+
 .kwhite {
-  color: #c5cdcd;
+  color: var(--clr-neutral-400);
 }
 
 .gold {
-  color: #835f02;
+  color: var(--clr-accent-400);
 }
 
 .teal {
-  color: #173738;
+  color: var(--clr-primary-400);
 }
 
 .brown-sugar {
-  font-family: 'Brown Sugar';
+  font-family: var(--ff-accent);
 }
 
 .raleway {
-  font-family: 'Raleway';
-}
-
-.avatar {
-  object-position: 0 28%;
+  font-family: var(--ff-primary);
 }
