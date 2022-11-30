@@ -35,7 +35,7 @@ const BookishDesign = () => {
             <div className={`${pressed ? "hidden" : ""}`}>
               <div className={`${styles.container}`}>
                 <div>
-                  <h2 className="raleway kwhite text-[1rem] lg:text-[1.2rem] text-center lg:px-40">
+                  <h2 className="raleway kwhite text-[1rem] lg:text-[1.2rem] text-center xl:px-40">
                     The Bewitched Book Box - UI/Visual design and branding for a book box subscription's desktop and mobile product page and checkout flow
                   </h2>
                 </div>
