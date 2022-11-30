@@ -3,7 +3,6 @@ import React from 'react';
 import Meta from "layouts/meta";
 import Main from "layouts/main";
 
-import Section from 'components/section';
 import { HotelDesign } from 'components/hotelDesign';
 import { BookishDesign } from 'components/bookishDesign';
 import { EmailDesign } from 'components/emailDesign';
@@ -19,15 +18,15 @@ export default function Designs() {
                 />
             }
         >
-            <Section id="hotel" contentClassNames="w-full">
+            <div id="hotel">
                 <HotelDesign />
-            </Section>
-            <Section id="mobile-email" darktheme={false} contentClassNames="w-full">
+            </div>
+            <div id="mobile-email">
                 <EmailDesign />
-            </Section>
-            <Section id="book-box" contentClassNames="w-full">
+            </div>
+            <div id="book-box" >
                 <BookishDesign />
-            </Section>
+            </div>
         </Main>
     );
 }
