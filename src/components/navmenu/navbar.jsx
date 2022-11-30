@@ -19,7 +19,7 @@ export default function NavMenu() {
   };
 
   return (
-    <div className="lg:flex justify-center py-5 w-full hidden text-[0.65em] relative z-10 -mb-[52.5px]" id="navbar">
+    <div className="lg:flex justify-center py-5 w-full hidden text-[0.65em] relative z-10" id="navbar">
       <div className="absolute">
         <Menu.Root className="w-full flex flex-wrap items-center justify-center mx-auto">
           <Menu.List className="flex-row text-center flex">
