@@ -28,7 +28,6 @@
 
 @media (min-width: 1024px) {
   .section {
-    height: max(100vh, fit);
     padding: 4rem 3rem 2rem 3rem;
   }
 }
