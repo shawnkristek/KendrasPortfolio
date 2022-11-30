@@ -10,6 +10,7 @@ import Button from "components/button";
 
 import { getAllSlides } from "lib/slides";
 
+import styles from 'styles/casestudies.module.css';
 
 export default function SlideShowPage({
   kindleSlides,
@@ -30,47 +31,53 @@ export default function SlideShowPage({
       }
     >
       <div className="">
-        <Section id="kindle-book-clubs" className="" contentClassNames="pt-10" >
-          <div className="h-full w-full flex flex-col justify-center align-middle items-center">
-            <div className="h-full w-[60%] flex flex-col justify-center align-middle">
-              <Video videoUrl="https://www.youtube.com/embed/iCUQ5gxlOe0" className="" />
+
+        <div id="kindle-book-clubs" className={styles.section} >
+          <div className={styles.vsplit}>
+            <div className="flex justify-center pb-3">
+              <iframe
+                className="aspect-video w-[25rem] max-w-full"
+                src={"https://www.youtube.com/embed/iCUQ5gxlOe0" + "?rel=0"}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="flex flex-col justify-center align-middle items-center">
+            <div className={styles.slidecontainer}>
               <SlideShow slides={kindleSlides} className="" aboveFold={true} scale={0.75} />
             </div>
-            {/* <SlideShow slides={kindleSlides} className="hidden h-0 lg:flex lg:h-auto" aboveFold={true} scale={0.75} /> */}
-            {/* <SlideShow slides={kindleSlidesMobile} className="lg:hidden" aboveFole={true} scale={1} /> */}
           </div>
-        </Section>
+        </div>
 
-        <Section id="matchbox-marketplace" darktheme={false} className="">
-          <div className="h-full flex flex-col gap-5 lg:gap-10 justify-center align-center items-center">
-            <div className="h-full w-[60%] flex flex-col justify-center align-middle">
-              <Video videoUrl="https://www.youtube.com/embed/jopFVQT8m3A" className="" />
+        <div id="matchbox-marketplace" className={`${styles.section} bg-neutral`} >
+          <div className={styles.vsplit}>
+            <div className="flex justify-center pb-3">
+              <iframe
+                className="aspect-video w-[25rem] max-w-full"
+                src={"https://www.youtube.com/embed/jopFVQT8m3A" + "?rel=0"}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="flex flex-col justify-center align-middle">
+            <div className={styles.slidecontainer}>
               <SlideShow slides={matchboxSlides} className="" aboveFold={false} scale={0.75} darktheme={false} />
             </div>
-            {/* <SlideShow slides={matchboxSlides} darktheme={false} className="hidden lg:flex" scale={0.75} /> */}
-            {/* <SlideShow slides={matchboxSlidesMobile} className="lg:hidden" darktheme={false} mobile={true} /> */}
           </div>
-        </Section>
+        </div>
 
-        <Section id="in-progress" className="">
-          {/* <div className="flex flex-col justify-center align-middle w-1/4">
-              <Video videoUrl="https://www.youtube.com/embed/ZVuToMilP0A" className="" />
-            </div> */}
+        <div id="in-progress" className={styles.section}>
           <div className="h-full flex flex-col gap-5 lg:gap-10 align-middle justify-center items-center">
             <div className="flex flex-col justify-center align-middle">
               <SlideShow slides={lejitSlides} className="" scale={0.75} />
             </div>
-            {/* <SlideShow slides={lejitSlides} className="hidden lg:flex" scale={0.75} /> */}
-            {/* <SlideShow slides={lejitSlidesMobile} className="lg:hidden" mobile={true} /> */}
             <Link href="/designs" className="flex justify-center ">
-              <Button text="but wait, there's more!" />
+              <Button text="but wait, there's more!" className={styles.button} />
             </Link>
           </div>
-        </Section>
+        </div>
       </div>
     </Main>
   );

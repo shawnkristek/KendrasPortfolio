@@ -48,8 +48,8 @@ export default function SlideShow({
 
 const styles = {
   control: {
-    marginLeft: "-50px",
-    marginRight: "-50px",
+    marginLeft: "-2em",
+    marginRight: "-1.9em",
     scale: "300%",
     boxShadow: "none",
     border: "none",
