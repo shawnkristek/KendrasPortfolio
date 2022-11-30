@@ -4,8 +4,6 @@ import Meta from "layouts/meta";
 import Main from "layouts/main";
 
 import SlideShow from "components/slideShow";
-import Section from "components/section";
-import Video from "components/video";
 import Button from "components/button";
 
 import { getAllSlides } from "lib/slides";
@@ -39,7 +37,7 @@ export default function SlideShowPage({
                 className="aspect-video w-[25rem] max-w-full"
                 src={"https://www.youtube.com/embed/iCUQ5gxlOe0" + "?rel=0"}
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -57,7 +55,7 @@ export default function SlideShowPage({
                 className="aspect-video w-[25rem] max-w-full"
                 src={"https://www.youtube.com/embed/jopFVQT8m3A" + "?rel=0"}
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>

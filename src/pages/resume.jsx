@@ -45,7 +45,7 @@ export default function Resume() {
   return (
     <Main meta={<Meta title="Kendra Wright: Resume" description="Download Kendra Wright's UX Designer Resume." />}>
       <section className={`${styles.container}`}>
-        <div className="mycontainer">
+        <div className="flex mx-auto">
           <div className="lg:px-10">
             <div>
               <SocialButtons />
@@ -55,7 +55,7 @@ export default function Resume() {
                 <Image src={ResumePage1} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 1."/>
               </div>
               <div>
-                <Image src={ResumePage1} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 1."/>
+                <Image src={ResumePage2} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 2."/>
               </div>
             </div>
           </div>
