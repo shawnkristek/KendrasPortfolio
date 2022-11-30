@@ -45,7 +45,7 @@ export default function Resume() {
   return (
     <Main meta={<Meta title="Kendra Wright: Resume" description="Download Kendra Wright's UX Designer Resume." />}>
       <section className={`${styles.container}`}>
-        <div className="mycontainer">
+        <div className="flex mx-auto">
           <div className="lg:px-10">
             <div>
               <SocialButtons />

@@ -39,10 +39,9 @@
   }
 
   .split > * {
-    flex-basis: 100%;
   }
 
   .split > * + * {
-    margin-left: 2em;
+    padding-left: 2rem;
   }
 }
