@@ -4,8 +4,8 @@
 
 @media (min-width: 1024px) {
   .container {
-    height: 100vh;
-    padding: 4rem 7rem;
+    height: calc(100vh-53px);
+    padding: 2%;
     display: flex;
   }
 }
