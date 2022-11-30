@@ -73,7 +73,7 @@ const BookishDesign = () => {
 
 const BookishDesignComponents = ({ className, ...props }) => {
   return (
-    <div id="book-box" className={`${className} h-full max-w-max flex flex-col justify-center align-middle gap-5 lg:gap-10`}>
+    <div className={`${className} h-full max-w-max flex flex-col justify-center align-middle gap-5 lg:gap-10`}>
       {/* Design Components */}
       <div className='flex flex-row justify-between gap-5 lg:gap-10'>
         <div>
