@@ -12,10 +12,10 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .vsplit {
-    padding-top: 1rem;
-  }
+.vsplit {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
 }
 
 .vsplit > * {
