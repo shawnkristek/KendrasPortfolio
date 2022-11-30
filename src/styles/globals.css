@@ -102,8 +102,13 @@ section {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1024px) {
+  .split > * + * {
+    margin-top: 1em;
+  }
+}
 
-@media (min-width: 40em) {
+@media (min-width: 1024px) {
   .split {
     flex-direction: row;
   }
@@ -134,8 +139,6 @@ section {
   color: var(--clr-netural-400);
   background-color: var(--clr-accent-400);
 }
-
-
 
 .kwhite {
   color: var(--clr-neutral-400);

@@ -5,11 +5,12 @@ import Image from "next/image";
 import Meta from "layouts/meta";
 import Main from "layouts/main";
 
-import Section from 'components/section';
 import { ResumePage1, ResumePage2 } from "lib/resumeImages";
 import { DribbbleIcon, LinkedInIcon, LetterIcon, DownloadIcon, CopyIcon } from "lib/icons";
 
 import { AppConfig } from "utils/AppConfig";
+
+import styles from 'styles/resume.module.css';
 
 
 export default function Resume() {
@@ -23,7 +24,7 @@ export default function Resume() {
 
   const SocialButtons = () => {
     return (
-      <div className={`flex flex-row gap-5 px-1 py-2 justify-center lg:justify-start lg:pl-5 w-full`}>
+      <div className={`flex flex-row gap-5 px-1 py-2 justify-center lg:justify-start lg:pl-2 w-full`}>
         <button onClick={handleEmailClick}>
           <Image src={LetterIcon} alt="email icon" className={copied ? "hidden" : ""} />
           <Image src={CopyIcon} alt="copy icon" className={!copied ? "hidden" : ""} />
@@ -41,24 +42,25 @@ export default function Resume() {
     );
   };
 
-  const ResumeComp = () => {
-    return (
-      <div className="h-full w-fit max-w-max flex flex-col justify-start lg:justify-center mx-auto">
-        <SocialButtons />
-        <div className="h-full w-full lg:w-fit flex flex-col justify-start lg:justify-center gap-5 lg:gap-10 lg:flex-row">
-          <Image src={ResumePage1} priority className="max-w-[80vw] lg:max-w-[40vw] max-h-[95%] w-auto aspect-auto"/>
-          <Image src={ResumePage2} priority className="max-w-[80vw] lg:max-w-[40vw] max-h-[95%] w-auto aspect-auto"/>
-        </div>
-      </div>
-
-    )
-  }
-
   return (
     <Main meta={<Meta title="Kendra Wright: Resume" description="Download Kendra Wright's UX Designer Resume." />}>
-      <Section className="h-full lg:h-screen" contentClassNames="w-full">
-        <ResumeComp />
-      </Section>
+      <section className={`${styles.container}`}>
+        <div className="mycontainer">
+          <div className="lg:px-10">
+            <div>
+              <SocialButtons />
+            </div>
+            <div className={styles.split}>
+              <div>
+                <Image src={ResumePage1} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 1."/>
+              </div>
+              <div>
+                <Image src={ResumePage1} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 1."/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Main >
   );
 }
