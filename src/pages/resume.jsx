@@ -55,7 +55,7 @@ export default function Resume() {
                 <Image src={ResumePage1} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 1."/>
               </div>
               <div>
-                <Image src={ResumePage1} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 1."/>
+                <Image src={ResumePage2} priority className={styles.photo} alt="Kendra Wright's UX designer resume page 2."/>
               </div>
             </div>
           </div>
