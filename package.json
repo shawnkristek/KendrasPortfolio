@@ -19,7 +19,7 @@
     "@radix-ui/react-navigation-menu": "^1.1.1",
     "@radix-ui/react-switch": "^1.0.1",
     "@radix-ui/react-toggle": "^1.0.1",
-    "@types/node": "18.11.9",
+    "@types/node": "18.11.18",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "embla-carousel-autoplay": "^7.0.5",
